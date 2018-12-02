@@ -56,7 +56,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates')
+            os.path.join(BASE_DIR, 'templates'),
+            # index page found here
+            os.path.join(BASE_DIR, 'index/templates')  
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -123,6 +125,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, "static")
+    os.path.join(BASE_DIR, "static"),
+    #index page static found here
+    os.path.join(BASE_DIR, "index/static")
 ]
 # STATICFILES_ROOT = os.path.join(BASE_DIR, 'static'), 
